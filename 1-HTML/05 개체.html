@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- 이미지 -->
   <h2>img</h2>
   <p>원래 크기의 이미지</p>
   <img src="images/salad.jpg" alt="레드향">
@@ -17,19 +18,29 @@
   <p>width="150"으로 지정한 이미지</p>
   <img src="images/salad.jpg" alt="레드향" width="150">
 
+  <!-- 개체 -->
   <h2>object (Audio, Video, Java Applet, PDF 등)</h2>
-  <object width="900" height="800" data="media/product.pdf"></object>
+  <object data="media/spring.mp3"></object><br>
+  <object data="media/salad.mp4"></object><br>
+  <object width="900" height="800" data="media/product.pdf"></object><br>
 
+  <!-- 고전 -->
   <h2>embed (Audio, Video, Image 등)</h2>
-  <embed src="media/flight.mp4" width="960" height="540">
+  <embed src="media/spring.mp3"><br>
+  <embed src="media/salad.mp4"><br>
+  <embed src="images/activity.jpg"><br>
 
+  <!-- 오디오 -->
   <h2>audio</h2>
   <audio src="media/spring.mp3" controls></audio>
 
+  <!-- 비디오 -->
   <h2>video</h2>
+  <video src="media/salad.mp4" width="960" controls></video>
   <video src="media/flower.mp4" width="960" muted autoplay loop></video>
 
-  <h2>audio, video 태그 속성</h2>
+  <!-- 속성 -->
+  <h2>audio, video 속성</h2>
   <ul>
     <li>controls: 컨트롤바 표시</li>
     <li>autoplay: 자동으로 실행</li>
