@@ -1,4 +1,6 @@
 <!-- order.html -->
+<!-- date.html -->
+<!-- select.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +17,29 @@
   <h1>레드향 주문하기</h1>
   <div id="container">
     <form>
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <label>
+          <select>
+            <option value="special_3" selected>선물용 3kg</option>
+            <option value="special_5">선물용 5kg</option>
+            <option value="family_3">가정용 3kg</option>
+            <option value="family_5">가정용 5kg</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <label><input type="text" list="goods"></label>
+        <datalist id="goods">
+          <option value="special_3">선물용 3kg</option>
+          <option value="special_5">선물용 5kg</option>
+          <option value="family_3">가정용 3kg</option>
+          <option value="family_5">가정용 5kg</option>
+        </datalist>
+      </fieldset>
       <fieldset>
         <legend>상품 선택</legend>
         <p><b>주문할 상품을 선택해 주세요.</b></p>
