@@ -38,15 +38,76 @@
 
     <!-- label input -->
     <p>
-      <label>label: <input type="text"></label> <!-- 방법 1 -->
+      <label>label 1: <input type="text" /></label>
     </p>
     <p>
-      <label for="label">label: </label> <!-- 방법 2 -->
-      <input type="text" id="label">
+      <label for="label">label 2: </label>
+      <input type="text" id="label" />
     </p>
 
     <!-- input -->
-
+    <p><label>text: <input type="text" /></label> - 텍스트 한 줄 입력</p>
+    <p><label>password: <input type="password" /></label> - 비밀번호 입력</p>
+    <ul>
+      <li>text, password</li>
+      <ul>
+        <li>size: 필드 길이</li>
+        <li>value: 화면에 표시할 텍스트</li>
+        <li>maxlength: 최대 입력 가능한 문자 수</li>
+      </ul>
+    </ul>
+    <p><label>search: <input type="search" /></label> - 검색</p>
+    <p><label>url: <input type="url" /></label> - URL 주소 입력</p>
+    <p><label>email: <input type="email" /></label> - 이메일 입력</p>
+    <p><label>tel: <input type="tel" /></label> - 전화번호 입력</p>
+    <p><label>checkbox: <input type="checkbox" value="checkbox" checked /></label> - 2개 이상 선택 가능</p>
+    <p><label>radio1: <input type="radio" name="radio" value="radio1" checked /></label> - 1개만 선택</p>
+    <p><label>radio2: <input type="radio" name="radio" value="radio2" /></label></p>
+    <ul>
+      <li>checkbox, radio</li>
+      <ul>
+        <li>value: 서버에 넘길 떄 알려줄 값. 영문, 숫자. 필수</li>
+        <li>checked: 자동 체크</li>
+      </ul>
+    </ul>
+    <p><label>number: <input type="number" /></label> - 숫자 스핀 박스</p>
+    <p><label>range: <input type="range" /></label> - 숫자 슬라이드 막대</p>
+    <ul>
+      <li>number, range</li>
+      <ul>
+        <li>min: 최소값. 기본값: 0</li>
+        <li>max: 최대값. 기본값: 100</li>
+        <li>step: 숫자 간격. 기본값: 1</li>
+        <li>value: 초기값</li>
+      </ul>
+    </ul>
+    <p><label>date: <input type="date" min="2000-01-01" max="2000-01-10" /></label> - 연, 월, 일 (사용자 지역 기준)</p>
+    <p><label>month: <input type="month" /></label> - 연, 월 (사용자 지역 기준)</p>
+    <p><label>week: <input type="week" /></label> - 연, 주 (사용자 지역 기준)</p>
+    <p><label>time: <input type="time" /></label> - 시, 분, 초, 분할 초 (사용자 지역 기준)</p>
+    <p><label>datetime: <input type="datetime" /></label> - 연, 월, 일, 시, 분, 초, 분할 초 (국제 표준시(UTC))</p>
+    <p><label>datetime-local: <input type="datetime-local" /></label> - 연, 월, 일, 시, 분, 초, 분할 초 (사용자 지역 기준)</p>
+    <ul>
+      <li>date, month, week, time, datetime, datetime-local</li>
+      <ul>
+        <li>min: 날짜, 시간 시작 </li>
+        <li>max: 날짜, 시간 마지막</li>
+        <li>step: 날짜, 시간 스핀박스 화살표 간격</li>
+        <li>value: 날짜, 시간 기본 표시</li>
+      </ul>
+    </ul>
+    <p><label>submit: <input type="submit" value="submit" /></label> - 전송</p>
+    <p><label>reset: <input type="reset" value="reset" /></label> - 리셋</p>
+    <p><label>image: <input type="image" src="/static/images/login.png" alt="로그인" /></label> - submit 대신 사용할 이미지</p>
+    <p><label>button: <input type="button" value="button" onclick="alert(`button`)" /></label> - 일반버튼</p>
+    <ul>
+      <li>button</li>
+      <ul>
+        <li>자바스크립트 실행할 때 사용</li>
+      </ul>
+    </ul>
+    <p><label>file: <input type="file" /></label> - 파일 첨부</p>
+    <p><label>hidden: <input type="hidden" name="hidden" value="hidden" /></label> - 숨김</p>
 
 
   </form>
