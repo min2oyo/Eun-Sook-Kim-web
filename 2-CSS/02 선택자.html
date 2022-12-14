@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+  <style>
+    /* 전체(universal) 선택자 */
+    * {
+      margin: 10;
+    }
+
+    /* type 선택자 */
+    p {
+      font-style: italic;
+    }
+
+    /* class 선택자 */
+    .class {
+      font-weight: bold;
+    }
+
+    /* id 선택자 */
+    #id {
+      font-weight: bold;
+    }
+
+    /* group 선택자 */
+    .group1,
+    .group2 {
+      font-weight: bold;
+    }
+
+    /* cascading */
+    .cascading {
+      color: black;
+    }
+
+    .cascading1 {
+      color: brown !important;
+    }
+
+    .cascading2 {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- universal(전체) 선택자 -->
+  <img src="/static/images/cat.jpg">
+
+  <!-- type 선택자 -->
+  <p>type 선택자</p>
+
+  <!-- class 선택자 -->
+  <p class="class">class 선택자</p>
+
+  <!-- id 선택자 -->
+  <p id="id">id 선택자</p>
+
+  <!-- group 선택자 -->
+  <p class="group1 group2">group 선택자</p>
+
+  <!-- cascading -->
+  <p class="cascading cascading1" style="color: green">cascading 1</p>
+  <p class="cascading cascading2">cascading 2</p>
+  <p class="cascading" style="color: red;">cascading 2</p>
+  <p class="cascading">cascading 2</p>
+
+</body>
+
+</html>
