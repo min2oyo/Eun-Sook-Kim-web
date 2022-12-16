@@ -181,6 +181,32 @@
       height: 100px;
       line-height: 100px;
     }
+
+    /* text-decoration */
+    .text-decoration_none {
+      text-decoration: none;
+    }
+
+    .text-decoration_underline {
+      text-decoration: underline;
+    }
+
+    .text-decoration_overline {
+      text-decoration: overline;
+    }
+
+    .text-decoration_line-through {
+      text-decoration: line-through;
+    }
+
+    /* text-shadow */
+    .text-shadow_none {
+      text-shadow: none;
+    }
+
+    .text-shadow_px {
+      text-shadow: 5px 5px 5px red;
+    }
   </style>
 </head>
 
@@ -605,11 +631,83 @@
         </dl>
         <ul>
           <li>세로로 가운데 정렬</li>
-          <li>'height'와 'line-height'의 값을 맞춤</li>
+          <li>'height:'와 'line-height:'의 값을 맞춤</li>
         </ul>
       </li>
     </ul>
+    <hr>
 
+    <!-- text-decoration -->
+    <h2>text-decoration:</h2>
+    <ul>
+      <li>
+        <p>none</p>
+        <dl>
+          <dd class="text-decoration_none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quam amet placeat ut ratione eius a? Molestias, quia, iste eos id similique natus temporibus unde, quibusdam animi illo accusantium quasi.</dd>
+        </dl>
+      </li>
+      <li>
+        <p>underline</p>
+        <dl>
+          <dd class="text-decoration_underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quam amet placeat ut ratione eius a? Molestias, quia, iste eos id similique natus temporibus unde, quibusdam animi illo accusantium quasi.</dd>
+        </dl>
+      </li>
+      <li>
+        <p>overline</p>
+        <dl>
+          <dd class="text-decoration_overline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quam amet placeat ut ratione eius a? Molestias, quia, iste eos id similique natus temporibus unde, quibusdam animi illo accusantium quasi.</dd>
+        </dl>
+      </li>
+      <li>
+        <p>line-through</p>
+        <dl>
+          <dd class="text-decoration_line-through">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quam amet placeat ut ratione eius a? Molestias, quia, iste eos id similique natus temporibus unde, quibusdam animi illo accusantium quasi.</dd>
+        </dl>
+      </li>
+    </ul>
+
+    <!-- text-shadow -->
+    <h2>text-shadow</h2>
+    <ul>
+      <li>
+        <p>none</p>
+        <dl>
+          <dd class="text-shadow_none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequatur optio nobis quos et quis assumenda voluptates quae nam accusamus, doloribus sed incidunt quisquam atque suscipit unde soluta consectetur voluptate.</dd>
+        </dl>
+      </li>
+      <li>
+        <p>5px 5px 5px red</p>
+        <dl>
+          <dd class="text-shadow_px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequatur optio nobis quos et quis assumenda voluptates quae nam accusamus, doloribus sed incidunt quisquam atque suscipit unde soluta consectetur voluptate.</dd>
+        </dl>
+        <ul>
+          <li>&lt;가로 거리 &lt;세로 거리&gt; &lt;번짐 정도&gt; &lt;색상&gt;</li>
+          <li>가로 거리</li>
+          <ul>
+            <li>양수: 오른쪽</li>
+            <li>음수: 왼쪽</li>
+          </ul>
+          <li>세로 거리</li>
+          <ul>
+            <li>양수: 아래</li>
+            <li>음수: 위</li>
+          </ul>
+          <li>번짐 정도</li>
+          <ul>
+            <li>양수: 모든 방향으로 퍼짐</li>
+            <li>음수: 모든 방향으로 축소</li>
+            <li>기본값: 0</li>
+          </ul>
+          <li>색상</li>
+          <ul>
+            <li>공백으로 구분해 여러 색상을 지정할 수 있음</li>
+            <li>기본값: 현재 글자색</li>
+          </ul>
+
+        </ul>
+      </li>
+    </ul>
+    <hr>
 
   </fieldset>
 
