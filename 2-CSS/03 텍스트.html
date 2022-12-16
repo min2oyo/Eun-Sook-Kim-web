@@ -8,8 +8,19 @@
   <title>텍스트</title>
   <style>
     /* font-family */
+    @font-face {
+      font-family: "Arial Regular";
+      src:
+        local("Arial Regular"),
+        url("fonts/ostrich-sans-bold.woff") format("woff"),
+        url("fonts/ostrich-sans-bold.ttf") format("truetype"),
+        url("fonts/ostrich-sans-bold.svg") format("svg");
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
     .font-family {
-      font-family: "맑은 고딕", "돋움", "굴림";
+      font-family: "Arial Regular", "sans-serif", "Nanum Pen Script", "cursive", "돋움";
     }
 
     /* font-style */
@@ -106,13 +117,13 @@
 <body>
 
   <fieldset>
-    <legend>글꼴</legend>
+    <legend>font</legend>
 
     <!-- font-family -->
     <h2>font-family:</h2>
     <ul>
       <li>
-        <p class="font-family">"맑은 고딕", "돋움", "굴림"</p>
+        <p class="font-family">"Arial Regular", "sans-serif", "돋움", "굴림", "굴림"</p>
       </li>
     </ul>
     <hr>
