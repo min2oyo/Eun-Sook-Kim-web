@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>텍스트</title>
   <style>
+    /* public */
+    dd {
+      border: 1px solid black;
+    }
+
     /* font-family */
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
@@ -127,6 +132,53 @@
 
     .color_word {
       color: red;
+    }
+
+    /* text-align */
+    .text-align_start {
+      text-align: start;
+    }
+
+    .text-align_end {
+      text-align: end;
+    }
+
+    .text-align_left {
+      text-align: left;
+    }
+
+    .text-align_right {
+      text-align: right;
+    }
+
+    .text-align_center {
+      text-align: center;
+    }
+
+    .text-align_justify {
+      text-align: justify;
+    }
+
+    .text-align_match-parent {
+      text-align: match-parent;
+    }
+
+    /* line-height */
+    .line-height_px {
+      line-height: 24px;
+    }
+
+    .line-height_multiple {
+      line-height: 2.0;
+    }
+
+    .line-height_percent {
+      line-height: 200%;
+    }
+
+    .line-height_height {
+      height: 100px;
+      line-height: 100px;
     }
   </style>
 </head>
@@ -372,6 +424,127 @@
         <p class="color_word">red</p>
       </li>
     </ul>
+    <hr>
+
+    <!-- text-align -->
+    <h2>text-align:</h2>
+    <ul>
+      <li>start</li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>현재 줄의 시작</li>
+      </ul>
+      <li>
+        <p>end</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>현재 줄의 끝</li>
+      </ul>
+      <li>
+        <p>left</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>왼쪽 정렬</li>
+        <li>기본값</li>
+      </ul>
+      <li>
+        <p>right</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>오른쪽 정렬</li>
+      </ul>
+      <li>
+        <p>center</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>가운데 정렬</li>
+      </ul>
+      <li>
+        <p>justify</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>양쪽 정렬</li>
+      </ul>
+      <li>
+        <p>parent</p>
+      </li>
+      <ul>
+        <dl>
+          <dt>
+            <p class="text-align_match">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi sint necessitatibus mollitia eligendi architecto esse laboriosam eveniet ratione. Nostrum fugiat quo aliquid, nemo officiis illo error distinctio minima laboriosam.</p>
+          </dt>
+        </dl>
+        <li>부모 요소를 따라 문단 정렬</li>
+      </ul>
+    </ul>
+    <hr>
+
+    <!-- line-height -->
+    <h2>line-height:</h2>
+    <ul>
+      <li>
+        <p>24px</p>
+      </li>
+      <dl>
+        <dd class="line-height_px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus dicta natus quam ab maxime esse saepe fugit et, aliquam incidunt corporis laudantium quia modi voluptates quidem nam officia. Facilis!</dd>
+      </dl>
+      <li>
+        <p>2.0</p>
+      </li>
+      <dl>
+        <dd class="line-height_multiple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus dicta natus quam ab maxime esse saepe fugit et, aliquam incidunt corporis laudantium quia modi voluptates quidem nam officia. Facilis!</dd>
+      </dl>
+      <ul>
+        <li>배수</li>
+        <li>보통 줄 간격은 1.5 ~ 2배면 적당함</li>
+      </ul>
+      <li>
+        <p>200%</p>
+      </li>
+      <dl>
+        <dd class="line-height_percent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus dicta natus quam ab maxime esse saepe fugit et, aliquam incidunt corporis laudantium quia modi voluptates quidem nam officia. Facilis!</dd>
+      </dl>
+      <li>
+        <p>100px</p>
+      </li>
+      <dl>
+        <dd class="line-height_height">Lorem</dd>
+      </dl>
+      <ul>
+        <li>세로로 가운데 정렬</li>
+        <li>'height'와 'line-height'의 값을 맞춤</li>
+      </ul>
+    </ul>
+
 
   </fieldset>
 
