@@ -12,6 +12,45 @@
       font-family: "맑은 고딕", "돋움", "굴림";
     }
 
+    /* font-style */
+    .font-style_normal {
+      font-style: normal;
+    }
+
+    .font-style_italic {
+      font-style: italic;
+    }
+
+    .font-style_oblique {
+      font-style: oblique;
+    }
+
+    /* font-variant */
+    .font-variant_normal {
+      font-variant: normal;
+    }
+
+    .font-variant_small-caps {
+      font-variant: small-caps;
+    }
+
+    /* font-weight */
+    .font-weight_normal {
+      font-weight: normal;
+    }
+
+    .font-weight_bold {
+      font-weight: bold;
+    }
+
+    .font-weight_bolder {
+      font-weight: bolder;
+    }
+
+    .font-weight_lighter {
+      font-weight: lighter;
+    }
+
     /* font-size 키워드 */
     .font-size_xx-small {
       font-size: xx-small;
@@ -61,154 +100,181 @@
     .font-size_percent {
       font-size: 10%;
     }
-
-    /* font-style */
-    .font-style_normal {
-      font-style: normal;
-    }
-
-    .font-style_italic {
-      font-style: italic;
-    }
-
-    .font-style_oblique {
-      font-style: oblique;
-    }
-
-    /* font-weight */
-    .font-weight {
-      font-weight: 1;
-    }
-
-    /* font */
-    .font {
-      font: 1;
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- font-family -->
-  <h2>font-family</h2>
-  <p class="font-family">font-family</p>
-  <hr>
+  <fieldset>
+    <legend>글꼴</legend>
 
-  <!-- font-size -->
-  <h2>font-size</h2>
-  <h3>키워드</h3>
-  <ul>
-    <li>
-      <p class="font-size_xx-small">xx-small</p>
-    </li>
-    <li>
-      <p class="font-size_x-small">x-small</p>
-    </li>
-    <li>
-      <p class="font-size_medium">medium</p>
-    </li>
-    <li>
-      <p class="font-size_larger">larger</p>
-    </li>
-    <li>
-      <p class="font-size_x-large">x-large</p>
-    </li>
-    <li>
-      <p class="font-size_xx-large">xx-large</p>
-    </li>
-  </ul>
+    <!-- font-family -->
+    <h2>font-family:</h2>
+    <ul>
+      <li>
+        <p class="font-family">"맑은 고딕", "돋움", "굴림"</p>
+      </li>
+    </ul>
+    <hr>
 
-  <h3>단위</h3>
-  <ul>
-    <li>
-      <p class="font-size_em">10em</p>
-      <ul>
-        <li>부모 요소에서 지정한 글꼴의 대문자 M의 너비(1em)로 비율값 지정</li>
-      </ul>
-    </li>
-    <li>
-      <p class="ont-size_rem">10rem</p>
-      <ul>
-        <li>문서 시작 부분(root)에서 지정한 크기(1rem)로 비율값 지정</li>
-      </ul>
-    </li>
-    <li>
-      <p class="font-size_ex">10ex</p>
-      <ul>
-        <li>해당 글꼴의 소문자 x의 높이(1ex)로 비율값 지정</li>
-      </ul>
-    </li>
-    <li>
-      <p class="font-size_px">10px</p>
-      <ul>
-        <li>모니터의 1픽셀(1px)로 비율값 지정</li>
-      </ul>
-    </li>
-    <li>
-      <p class="font-size_pt">10pt</p>
-      <ul>
-        <li>point로 불림</li>
-        <li>일반 문서에서 많이 사용</li>
-      </ul>
-    </li>
-    <li>
-      <p class="font-size_percent">10%</p>
-      <ul>
-        <li>부모 요소의 글자 크기를 기준으로 계산하여 지정</li>
-        <li>부모 요소의 글꼴 크기가 단위(10px)로 표현되어 있어야 함</li>
-      </ul>
-    </li>
-  </ul>
+    <!-- font -->
+    <h2>font:</h2>
+    <ul>
+      <li>
+        <p>&lt;font-style&gt;&lt;font-variant&gt;&lt;font-weight&gt;</p>
+        <ul>
+          <li>font-style 속성값을 font 속성값으로 사용</li>
+          <li>font-style이라는 키워드를 사용하는 것이 아님</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
 
-  <hr>
+    <!-- font-style -->
+    <h2>font-style:</h2>
+    <ul>
+      <li>
+        <p class="font-style_normal">normal</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p class="font-style_italic">italic</p>
+        <ul>
+          <li>처음부터 기울어진 글꼴이 디자인 됨</li>
+          <li>웹에서 주로 사용</li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p class="font-style_oblique">oblique</p>
+        <ul>
+          <li>원래 글꼴을 기울어지게 표시함</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
 
-  <!-- font-style -->
-  <h2>font-style</h2>
-  <ul>
-    <li>
-      <p class="font-style_normal">normal</p>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <p class="font-style_italic">italic</p>
-      <ul>
-        <li>처음부터 기울어진 글꼴이 디자인 됨</li>
-        <li>웹에서 주로 사용</li>
-      </ul>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <p class="font-style_oblique">oblique</p>
-      <ul>
-        <li>원래 글꼴을 기울어지게 표시함</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
+    <!-- font-variant -->
+    <h2>font-variant:</h2>
+    <ul>
+      <li>
+        <p class="font-variant_normal">normal</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p class="font-variant_small-caps">small-caps</p>
+      </li>
+    </ul>
+    <hr>
 
-  <!-- font-weight -->
-  <h2>font-weight</h2>
-  <p class="font-weight"></p>
-  <hr>
+    <!-- font-weight -->
+    <h2>font-weight:</h2>
+    <ul>
+      <li>
+        <p>100 ~ 900</p>
+      </li>
+      <li>
+        <p class="font-weight_normal">normal</p>
+        <ul>
+          <li>400</li>
+          <li>보통 굵기</li>
+          <li>기본값</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-weight_bold">bold</p>
+        <ul>
+          <li>700</li>
+          <li>굵게</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-weight_bolder">bolder</p>
+        <ul>
+          <li>원래보다 더 굵게</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-weight_lighter">lighter</p>
+        <ul>
+          <li>원래보다 더 가늘게</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
 
-  <!-- font -->
-  <h2>font</h2>
-  <p class="font"></p>
-  <hr>
+    <!-- font-size -->
+    <h2>font-size:</h2>
+    <h3>키워드</h3>
+    <ul>
+      <li>
+        <p class="font-size_xx-small">xx-small</p>
+      </li>
+      <li>
+        <p class="font-size_x-small">x-small</p>
+      </li>
+      <li>
+        <p class="font-size_medium">medium</p>
+      </li>
+      <li>
+        <p class="font-size_larger">larger</p>
+      </li>
+      <li>
+        <p class="font-size_x-large">x-large</p>
+      </li>
+      <li>
+        <p class="font-size_xx-large">xx-large</p>
+      </li>
+    </ul>
 
-  <!-- font-variant -->
-  <h2>font-variant</h2>
-  <p class="font-variant"></p>
-  <hr>
+    <h3>단위</h3>
+    <ul>
+      <li>
+        <p class="font-size_em">10em</p>
+        <ul>
+          <li>부모 요소에서 지정한 글꼴의 대문자 M의 너비(1em)로 비율값 지정</li>
+        </ul>
+      </li>
+      <li>
+        <p class="ont-size_rem">10rem</p>
+        <ul>
+          <li>문서 시작 부분(root)에서 지정한 크기(1rem)로 비율값 지정</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-size_ex">10ex</p>
+        <ul>
+          <li>해당 글꼴의 소문자 x의 높이(1ex)로 비율값 지정</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-size_px">10px</p>
+        <ul>
+          <li>모니터의 1픽셀(1px)로 비율값 지정</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-size_pt">10pt</p>
+        <ul>
+          <li>point로 불림</li>
+          <li>일반 문서에서 많이 사용</li>
+        </ul>
+      </li>
+      <li>
+        <p class="font-size_percent">10%</p>
+        <ul>
+          <li>부모 요소의 글자 크기를 기준으로 계산하여 지정</li>
+          <li>부모 요소의 글꼴 크기가 단위(10px)로 표현되어 있어야 함</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
 
+  </fieldset>
 
-  <!-- text -->
-  <!-- <script>
-    let text = document.getElementsByTagName(`p`);
-    for (let i = 0; i < text.length; i++) text[i].innerText = "나는 텍스트당~";
-  </script> -->
 </body>
 
 </html>
