@@ -8,6 +8,8 @@
   <title>텍스트</title>
   <style>
     /* font-family */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
     @font-face {
       font-family: "Arial Regular";
       src:
@@ -17,10 +19,8 @@
         url("fonts/ostrich-sans-bold.svg") format("svg");
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-
     .font-family {
-      font-family: "Arial Regular", "sans-serif", "Nanum Pen Script", "cursive", "돋움";
+      font-family: "Nanum Pen Script", "cursive", "Arial Regular", "돋움", "굴림";
     }
 
     /* font-style */
@@ -111,6 +111,23 @@
     .font-size_percent {
       font-size: 10%;
     }
+
+    /* color */
+    .color_rgba {
+      color: rgba(255, 0, 0, 1);
+    }
+
+    .color_hexadecimal {
+      color: #ff0000;
+    }
+
+    .color_hsla {
+      color: hsla(0, 100%, 50%, 1);
+    }
+
+    .color_word {
+      color: red;
+    }
   </style>
 </head>
 
@@ -123,7 +140,7 @@
     <h2>font-family:</h2>
     <ul>
       <li>
-        <p class="font-family">"Arial Regular", "sans-serif", "돋움", "굴림", "굴림"</p>
+        <p class="font-family">"Nanum Pen Script", "cursive", "Arial Regular", "돋움", "굴림"</p>
       </li>
     </ul>
     <hr>
@@ -283,6 +300,78 @@
       </li>
     </ul>
     <hr>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>style</legend>
+
+    <!-- color -->
+    <h2>color:</h2>
+    <h3>rgba</h3>
+    <ul>
+      <li>
+        <p class="color_rgba">rgba(255, 0, 0, 1)</p>
+        <ul>
+          <li>0: 해당색이 하나도 섞이지 않음</li>
+          <li>255: 해당색이 가득 섞임</li>
+          <li>CSS에서 주로 사용</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>hexadecimal(16진수)</h3>
+    <ul>
+      <li>
+        <p class="color_hexadecimal">#ff0000</p>
+      </li>
+      <ul>
+        <li>#000000: 검은색</li>
+        <li>#ffffff: 흰색</li>
+        <li>#RRGGBB</li>
+        <li>#0000ff = #00f</li>
+        <li>00: 해당색이 하나도 섞이지 않음</li>
+        <li>ff: 해당색이 가득 섞임</li>
+      </ul>
+    </ul>
+
+    <h3>hsla, hsl</h3>
+    <ul>
+      <li>
+        <p class="color_hsla">hsla(0, 100%, 50%, 1)</p>
+      </li>
+      <ul>
+        <li>hue(색상)</li>
+        <ul>
+          <li>0º, 360º: 빨강</li>
+          <li>120º: 초록</li>
+          <li>240º: 파랑</li>
+        </ul>
+        <li>saturation(채도)</li>
+        <ul>
+          <li>0%: 회색</li>
+          <li>100%: 원래색</li>
+        </ul>
+        <li>lightness(명도)</li>
+        <ul>
+          <li>0%: 검은색</li>
+          <li>50%: 원래색</li>
+          <li>100%: 흰색</li>
+        </ul>
+        <li>alpha: 불투명도</li>
+        <ul>
+          <li>0: 투명</li>
+          <li>1: 원래색</li>
+        </ul>
+      </ul>
+    </ul>
+
+    <h3>word(영문명)</h3>
+    <ul>
+      <li>
+        <p class="color_word">red</p>
+      </li>
+    </ul>
 
   </fieldset>
 
