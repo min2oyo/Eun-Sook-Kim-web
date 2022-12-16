@@ -63,8 +63,16 @@
     }
 
     /* font-style */
-    .font-style {
-      font-style: 1;
+    .font-style_normal {
+      font-style: normal;
+    }
+
+    .font-style_italic {
+      font-style: italic;
+    }
+
+    .font-style_oblique {
+      font-style: oblique;
     }
 
     /* font-weight */
@@ -156,7 +164,28 @@
 
   <!-- font-style -->
   <h2>font-style</h2>
-  <p class="font-style"></p>
+  <ul>
+    <li>
+      <p class="font-style_normal">normal</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p class="font-style_italic">italic</p>
+      <ul>
+        <li>처음부터 기울어진 글꼴이 디자인 됨</li>
+        <li>웹에서 주로 사용</li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p class="font-style_oblique">oblique</p>
+      <ul>
+        <li>원래 글꼴을 기울어지게 표시함</li>
+      </ul>
+    </li>
+  </ul>
   <hr>
 
   <!-- font-weight -->
