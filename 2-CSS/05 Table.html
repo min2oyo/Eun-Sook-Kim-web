@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    /* caption */
+    .caption_top {
+      caption-side: top;
+    }
+
+    .caption_bottom {
+      caption-side: bottom;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- caption -->
+  <h2>caption-side:</h2>
+  <ul>
+    <li>
+      <p>top</p>
+      <dl>
+        <dd>
+          <table>
+            <caption class="caption_top">caption</caption>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>bottom</p>
+      <dl>
+        <dd>
+          <table>
+            <caption class="caption_bottom">caption</caption>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+</body>
+
+</html>
