@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+    /* public */
+    /* dd {
+      border: 1px solid red;
+    } */
+
+    div {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* float */
+    .float_none {
+      float: none;
+    }
+
+    .float_left {
+      float: left;
+    }
+
+    .float_right {
+      float: right;
+    }
+
+    /* clear */
+    .clear_left {
+      clear: left;
+      border-color: blue;
+    }
+
+    .clear_right {
+      clear: right;
+      border-color: blue;
+    }
+
+    .clear_both {
+      clear: both;
+      border-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- clear -->
+  <h2>clear:</h2>
+  <ul>
+    <li>
+      <p>left</p>
+      <dl>
+        <dd>
+        <dd>
+          <div class="float_left"></div>
+          <div class="float_left"></div>
+          <div class="clear_left"></div>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <p>right</p>
+      <dl>
+        <dd>
+          <div class="float_right"></div>
+          <div class="float_right"></div>
+          <div class="clear_right"></div>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <p>both</p>
+      <dl>
+        <dd>
+          <div class="float_left"></div>
+          <div class="float_right"></div>
+          <div class="clear_both"></div>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <hr>
+
+</body>
+
+</html>
