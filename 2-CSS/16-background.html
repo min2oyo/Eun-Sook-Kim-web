@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    /* public */
+    dd {
+      border: 1px solid red;
+    }
+
+    div {
+      border: 5px dotted blue;
+      background-color: black;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* background-color */
+    .background-color_gray {
+      background-color: gray;
+    }
+
+    /* background-clip */
+    .background-clip_border-box {
+      background-clip: border-box;
+    }
+
+    .background-clip_padding-box {
+      background-clip: padding-box;
+    }
+
+    .background-clip_content-box {
+      background-clip: content-box;
+    }
+
+    /* background */
+    .background_url_no-repeat_center_top_scroll {
+      background: url('/static/images/book-icon.png') no-repeat center top scroll;
+    }
+
+    /* background-image */
+    .background-image {
+      background-image: url('/static/images/img-bg1.jpg');
+    }
+
+    /* background-repeat */
+    .background-repeat_repeat {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: repeat;
+    }
+
+    .background-repeat_repeat-x {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: repeat-x;
+    }
+
+    .background-repeat_repeat-y {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: repeat-y;
+    }
+
+    .background-repeat_no-repeat {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+    }
+
+    /* background-position */
+    .background-position_30px_30px {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-position: 30px 30px;
+    }
+
+    /* background-attachment */
+    .background-attachment_scroll {
+      background-image: url('/static/images/book-icon.png');
+      background-attachment: scroll;
+    }
+
+    .background-attachment_fixed {
+      background-image: url('/static/images/book-icon.png');
+      background-attachment: fixed;
+    }
+
+    /* background-origin */
+    .background-origin_content-box {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-origin: content-box;
+    }
+
+    .background-origin_padding-box {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-origin: padding-box;
+    }
+
+    .background-origin_border-box {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-origin: border-box;
+    }
+
+    /* background-size */
+    .background-size_auto {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+
+    .background-size_contain {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .background-size_cover {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .background-size_50px {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-size: 50px;
+    }
+
+    .background-size_50percent {
+      background-image: url('/static/images/book-icon.png');
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- background-color -->
+  <h2>background-color:</h2>
+  <ul>
+    <li>
+      <p>gray</p>
+      <dl>
+        <dd>
+          <div class="background-color_gray"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>CSS가 부모에서 상속되지 않음</li>
+        <li>모든 웹 문서 요소의 배경은 투명색임</li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-clip -->
+  <h2>background-clip:</h2>
+  <ul>
+    <li>
+      <p>border-box</p>
+      <dl>
+        <dd>
+          <div class="background-clip_border-box"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>border까지 적용</li>
+        <li>기본값</li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>padding-box</p>
+      <dl>
+        <dd>
+          <div class="background-clip_padding-box"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>padding까지 적용</li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>content-box</p>
+      <dl>
+        <dd>
+          <div class="background-clip_content-box"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>content까지 적용</li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background -->
+  <h2>background:</h2>
+  <ul>
+    <li>
+      <p>url('/static/images/book-icon.png') no-repeat center top scroll</p>
+      <dl>
+        <dd>
+          <div class="background_url_no-repeat_center_top_scroll"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>사용한 속성</li>
+        <ul>
+          <li>background-image</li>
+          <li>background-repeat</li>
+          <li>background-position</li>
+          <li>background-attachment</li>
+        </ul>
+        <li>순서 상관 없음</li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-image -->
+  <h2>background-image:</h2>
+  <ul>
+    <li>
+      <p>url('/static/images/bd-1.jpg')</p>
+      <dl>
+        <dd>
+          <div class="background-image"></div>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-repeat -->
+  <h2>background-repeat:</h2>
+  <ul>
+    <li>
+      <p>repeat</p>
+      <dl>
+        <dd>
+          <div class="background-repeat_repeat"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>브라우저 화면에 가득 찰 떄까지 가로, 세로 반복</li>
+        <li>기본값</li>
+      </ul>
+    </li>
+    <li>
+      <p>repeat-x</p>
+      <dl>
+        <dd>
+          <div class="background-repeat_repeat-x"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>브라우저 화면 너비에 가득 찰 때까지 가로 반복</li>
+      </ul>
+    </li>
+    <li>
+      <p>repeat-y</p>
+      <dl>
+        <dd>
+          <div class="background-repeat_repeat-y"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>브라우저 화면 너비에 가득 찰 때까지 세로 반복</li>
+      </ul>
+    </li>
+    <li>
+      <p>no-repeat</p>
+      <dl>
+        <dd>
+          <div class="background-repeat_no-repeat"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>반복 없음</li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-position -->
+  <h2>background-position:</h2>
+  <ul>
+    <li>
+      <p>left top</p>
+      <dl>
+        <dd>
+          <div class="background-position_30px_30px"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>&lt;수평 위치&gt; &lt;수직 위치&gt;</li>
+        <ul>
+          <li>수직 위치: left | center | right | &lt;백분율&gt; | &lt;길이 값&gt;</li>
+          <li>수평 위치: top | center | bottom | &lt;백분율&gt; | &lt;길이 값&gt;</li>
+        </ul>
+        <li>속성 1개</li>
+        <ul>
+          <li>수평 위치: 이거로 적용</li>
+          <li>수직 위치: 50%, center로 적용</li>
+        </ul>
+        <li>background-position: center</li>
+        <ul>
+          <li>정 가운데에 위치</li>
+        </ul>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-attachment -->
+  <h2>background-attachment:</h2>
+  <ul>
+    <li>
+      <p>scroll</p>
+      <dl>
+        <dd>
+          <div class="background-attachment_scroll"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>기본값</li>
+      </ul>
+    </li>
+    <li>
+      <p>fixed</p>
+      <dl>
+        <dd>
+          <div class="background-attachment_fixed"></div>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-origin -->
+  <h2>background-origin:</h2>
+  <ul>
+    <li>
+      <p>content-box</p>
+      <dl>
+        <dd>
+          <div class="background-origin_content-box"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>기본값</li>
+      </ul>
+    </li>
+    <li>
+      <p>padding-box</p>
+      <dl>
+        <dd>
+          <div class="background-origin_padding-box"></div>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <p>border-box</p>
+      <dl>
+        <dd>
+          <div class="background-origin_border-box"></div>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <hr>
+
+  <!-- background-size -->
+  <h2>background-size:</h2>
+  <ul>
+    <li>
+      <p>auto</p>
+      <dl>
+        <dd>
+          <div class="background-size_auto"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>원본 크기</li>
+        <li>기본값</li>
+      </ul>
+    </li>
+    <li>
+      <p>contain</p>
+      <dl>
+        <dd>
+          <div class="background-size_contain"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>요소 안에 다 들어오도록 맞춤</li>
+      </ul>
+    </li>
+    <li>
+      <p>cover</p>
+      <dl>
+        <dd>
+          <div class="background-size_cover"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>요소 전체를 덮음</li>
+      </ul>
+    </li>
+    <li>
+      <p>50px</p>
+      <dl>
+        <dd>
+          <div class="background-size_50px"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>값이 1개면 너비값으로 인식</li>
+      </ul>
+    </li>
+    <li>
+      <p>50%</p>
+      <dl>
+        <dd>
+          <div class="background-size_50percent"></div>
+        </dd>
+      </dl>
+      <ul>
+        <li>값이 1개면 너비값으로 인식(?)</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
