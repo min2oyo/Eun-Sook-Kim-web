@@ -12,6 +12,10 @@
       margin: 10;
     }
 
+    dd {
+      border: 1px solid red;
+    }
+
     /* type 선택자 */
     p {
       font-style: italic;
@@ -116,7 +120,7 @@
   </ul>
 
   <!-- 하위 요소 | 하위 선택자 -->
-  <h3>하위 요소 | 하위 선택자(descendant selector)</h3>
+  <h4>하위 요소 | descendant selector(하위 선택자)</h4>
   <dl>
     <dd>section p {}</dd>
   </dl>
@@ -127,7 +131,7 @@
   </ul>
 
   <!-- 하위 요소 | 자식 선택자 -->
-  <h3>하위 요소 | 자식 선택자(child selector)</h3>
+  <h4>하위 요소 | child selector(자식 선택자)</h4>
   <dl>
     <dd>select>p {}</dd>
   </dl>
@@ -148,6 +152,24 @@
     <ul>
       <li>나중에 나오는 요소</li>
     </ul>
+  </ul>
+
+  <h4>형제 요소 | adjacent selector(인접 형제 선택자)</h4>
+  <dl>
+    <dd>h1+p {}</dd>
+  </dl>
+  <ul>
+    <li>요소1+요소2</li>
+    <li>요소1과 요소2는 같은 레벨이면서 요소1 이후 가장 먼저 오는 요소2를 선택</li>
+  </ul>
+
+  <h4>형제 요소 | sibling selector(형제 선택자)</h4>
+  <dl>
+    <dd>h1~p {}</dd>
+  </dl>
+  <ul>
+    <li>요소1~요소2</li>
+    <li>모든 형제 요소에 적용</li>
   </ul>
 
   <hr>
